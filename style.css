@@ -1,0 +1,128 @@
+
+.zoom{
+  padding: 10px;
+  transition: transform .2s; /* Animation */
+  margin: 50px auto;
+  display: block;
+}
+.zoom:hover{
+  transform: scale(1.2);
+
+}
+h1{
+  text-align: center;
+  font-family: "lucida handwriting",cursive;
+  margin:25px auto 30px;
+  background-color: #EED7CE;
+  border-radius: 20px;
+}
+h2{
+  font-family: "lucida handwriting",cursive;
+  margin-top:  20px;
+  text-align: center;
+  background-color: #A3DA8D;
+  padding: 10px;
+  border-radius: 20px;
+}
+h3{
+    font-family: "lucida handwriting",cursive;
+    text-align: center;
+}
+h4{
+ font-family: "lucida handwriting",cursive;
+ text-align: center;
+
+
+}
+.carousel-inner{
+  margin-bottom: 15px;
+}
+.bg_color{
+  background-color: #98BAE7;
+}
+.grad1{
+  width:150px;
+  height:150px;
+  position :absolute;
+  margin-top: -445px;
+  margin-left: 200px;
+}
+.grad2{
+  display:block;
+  width:200px;
+  height:200px;
+
+  position: absolute;
+  margin-top: -245px;
+  margin-left: 750px;
+}
+.resize_img{
+  width: 500px;
+}
+.align_center{
+text-align: center;
+font-family: "lucida handwriting",cursive;
+}
+hr{
+  color: #DADDFC;
+  border-style: none;
+  border-top-style: dotted;
+  border-width:10px;
+  border-color: blue;
+  width: 50%;
+  margin: 15px auto 0;
+  border-radius: 100%;
+}
+.whole{
+  margin: auto 150px 15px;
+}
+.radi{
+  border-radius: 30px;
+}
+.academic{
+  width:1049px;
+  margin:15px auto 30px;
+  background-color: #DFD3C3;
+  border-radius: 30px;
+}
+.academic_heading{
+  background-color: #BAABDA;
+  width: 1049px;
+  margin: 30px auto 15px;
+  padding: 5px;
+  font-weight: bold;
+  text-decoration:underline;
+  border-radius: 30px;
+}
+.card{
+  float: left;
+  margin-left: 45px;
+}
+.card_line{
+  margin-left: 150px;
+  margin-top: 30px;
+  margin-bottom: 400px;
+}
+.card-img-top{
+  height: 150px;
+  width:300px;
+}
+.card_body{
+  background-color: #C2FFF9;
+  width: 300px;
+  height: 150px;
+}
+
+/* .os_heading{
+  margin: 15px auto 15px;
+  background-color: #A3DA8D;
+  width: 1049px;
+  border-radius: 30px;
+  height: 35px;
+}
+.os{
+  background-color: #84DFFF;
+  margin: 15px auto 15px;
+  width: 1049px;
+  border-radius: 30px;
+} */
