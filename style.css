@@ -1,128 +1,116 @@
 body{   
         background-color: rgb(0, 0, 0);
 }
+
 #logs{
+    width: 70%;
     display: flex;
     margin-left: 15%;
-    position: fixed;
-    margin-top: -100px;
+    margin-right: 15%;
 }
-#logs img{
-    height: 50px;
+#logo{
+    flex:1;       
 }
 #om{
-    margin-left: 800px;
+    flex:1;
+    text-align: right;
+    
 }
-#logo img:hover{
-    transform: scale(1.2);
-    transition: all 0.5s; 
-}
-
-#om{
-    display: inline-block;
+#logo img{
+    width: 10%;
 }
 #om img{
-    height: 60px;
-}
-#cont1{
-    margin-top: 120px;
+    width: 12%;
     
 }
 
-#greet{
-    
-    margin-left: 15%;
+/***********************************/
+.c1,.c2,.c3,.c4{
+    color: #92A9BD;
+}
+.c1{
+    font-size: 3vw;
+    font-weight: bold;
+    grid-area: greet;
     color: aliceblue;
-    font-size: 50px;
     font-family: 'Caveat', cursive;
-    margin-bottom: 0;
     opacity: 0.5;
-    margin-top: auto;
 }
-#name{
-    margin-top: auto;
-    margin-left: 15%;
-    color: aliceblue;
-    font-size: 70px;
+.c2{
+    grid-area: name;
+    font-size: 5vw;
+    font-weight: bold;
     font-family: 'Caveat', cursive;
-    margin-top: 0;
-    margin-bottom: 0;
-    
+    color: aliceblue;
+
 }
-#career{
-    margin-top: 10px;
-}
-.wsr{
-    position: relative;
+.c3{
+    margin-top: 3%;
+    grid-area: designation;
     color: #92A9BD;
     font-weight: bolder;
-    font-size: 20px;
-    margin-left: 15%;
+    font-size: 1.7vw;
     font-family: 'Caveat', cursive;
 }
-#pp{
-    padding: 20px;
-    
-    position: relative;
-    margin-top: -200px;
-    margin-left: 65%; 
+.c4{
+    grid-area: description;
+    color: aliceblue;
+    margin-top: 10%;
+    font-size: 2.2vw;
+    font-family: 'Caveat', cursive;
+}
+.c5{
+    grid-area: pp;
+    text-align: right;
+    opacity: 1;
+    transform: translateX(0);
     transition: all 1s ease-in-out;
-    overflow: hidden;
 }
-#ppi{
-    width: 200px;  
+.moveright{
+    opacity: 0;
+    transform: translateX(50px);
 }
-#ppi:hover{
-    transform: scale(1.2);
-    transition: all 0.5s ease-in-out;
+.c5 img{
+    width: 18vw;
+    margin-top: 30%;
+}
+.c6{
+    grid-area: social;
 }
 
-.move-right{
-    opacity: 0;
-    transform: translateX(50px); 
-}
-#lid{
-    color: aliceblue;
-    font-size: 30px;
-    margin-left: 0;
-    font-family: 'Caveat', cursive;
-}
-#simg{
+.con1{
     display: grid;
-    grid-template-columns: auto auto auto auto;
-}
-.in{
-    width: 30px;
-    margin-top: 20px;
-    margin-left: 25%;
-    
-}
-.tw{
-    width: 40px;
-    margin-top: 25px;
-    margin-left: 40px;
-    
-}
-.gimg{
-    width: 30px;
-    margin-top: 25px;
-    margin-left: 30px;
-}
-.iimg{
-    width: 30px;
-    margin-top: 20px;
-    margin-left: 30px;
-}
-#Dsoci{
+    margin-top: 5%;
+    width: 70%;
+    margin-bottom: 5%;
     margin-left: 15%;
-    display: flex;
+    grid-template-areas: 'greet  pp'
+                        'name  pp'
+                        'designation  pp'
+                        'description  social';
+    
 }
+#con11{
+    display: flex;
+    margin-left: 48%; 
+}
+#con11 a{
+    margin-top: 15%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+#con11 img{
+    width: 2vw;
+    height: 13%;
+}
+
+/***********************************/
 
 .item1{
     margin-top: 60px;
     color: cadetblue;
     grid-area: skill;
-    font-size: 20px;
+    font-size: 2vw;
     font-weight:bold;
     font-family: cursive;
     text-decoration: underline;
@@ -134,9 +122,9 @@ body{
     color: aliceblue;
     grid-area: head;
     font-family: 'Caveat', cursive;
-    font-size: 55px;
+    font-size: 4vw;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 2%;
     opacity: 1;
     transform: translateX(0);
     transition: all 1s ease-in-out;
@@ -145,22 +133,18 @@ body{
     opacity: 0;
     transform: translateX(-50px);
 }
-.item3:hover{
-    margin-left: 15px;
-    transition: all 0.5s;
-}
-
 .item4{
-    margin-top: 150px;
+    margin-top: 20%;
     color:aliceblue;
     grid-area: para;
     margin-left: 30%;
     margin-right: 20%;
-    font-size: x-large;
+    font-size: 2vw;
     text-align: justify;
     opacity: 1;
     transform: translateX(0);
     transition: all 1s ease-in-out;
+    font-family: 'Caveat', cursive;
 }
 .pright{
     opacity: 0;
@@ -168,15 +152,13 @@ body{
 }
 
 #education{
-    width: 230px;
     margin-left: 15%;
-    margin-top: 50px;
+    margin-top: 5%;
     color: #0088ff;
     font-weight: bold;
-    font-size: 60px;
-    font-family: 'Lobster', cursive;
-    
-    border-radius: 20px;
+    font-size: 5vw;
+    font-family: 'Caveat', cursive; 
+    text-decoration: underline;
    
 }
 hr{
@@ -188,7 +170,7 @@ hr{
 }
 
 #section1{
-    margin-top: 20px;
+    margin-top: 4%;
     margin-bottom: 40px;
     display: grid;
     margin-left: 15%;
@@ -202,42 +184,42 @@ hr{
         font-size: 30px;
         font-weight: bold;
         margin-bottom: 10px;
-        font-family: 'Fjalla One', sans-serif;        
+        font-family: 'Caveat', cursive;  
 }
 .grad1{
         color: #92A9BD;
         grid-area: grad;
         font-size: 20px;
-        font-family: 'Fjalla One', sans-serif;
-        opacity: 0.6;
+        font-family: 'Caveat', cursive;
+        opacity: 0.8;
         margin-left: -20px;
 }
 .higher{
         color: aliceblue;
         grid-area: higher;
         font-size: 30px;
-        font-family: 'Fjalla One', sans-serif;
+        font-family: 'Caveat', cursive;
 }
 .high1{
         color: #92A9BD;
         grid-area: high;
         font-size: 20px;
-        font-family: 'Fjalla One', sans-serif;
-        opacity: 0.6;
+        font-family: 'Caveat', cursive;
+        opacity: 0.8;
         margin-left: -20px;
 }
 .secondary{
         color: aliceblue;
         grid-area: secondary;
         font-size: 30px;
-        font-family: 'Fjalla One', sans-serif;
+        font-family: 'Caveat', cursive;
 }
 .sec1{
         color:#92A9BD;
         grid-area: sec;
         font-size: 20px;
-        font-family: 'Fjalla One', sans-serif;
-        opacity: 0.6;
+        font-family: 'Caveat', cursive;
+        opacity: 0.8;
         margin-left: -20px;
         transition: all 1s ease-in-out;
 }
@@ -245,11 +227,20 @@ hr{
 #section2{
     margin-left: 15%;
     margin-right: 8%;
-    margin-top: 40px;
+    margin-top: 5%;
     margin-bottom: 50px;
     display: grid;
     grid-template-areas: 'graduation higher secondary'
                          'grad       high   sec';
+}
+.section2{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
+}
+.godown{
+    opacity: 0;
+    transform: translateY(50px);
 }
 
 #certs{
