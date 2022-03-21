@@ -1,7 +1,8 @@
-var ppi = document.querySelector("#pp");
+var ppi = document.querySelector(".c5");
 window.onload = (event) => {
-    ppi.classList.remove("move-right");
+    ppi.classList.remove("moveright");
 } 
+
 
 
 
@@ -23,14 +24,17 @@ function appear(){
  }
 }
 //****************************************************** */
-let gup = document.querySelector("#godown");
+let gup = document.querySelector(".section2");
 window.addEventListener("scroll" , appearup);
 
 function appearup(){
     let textPosition = gup.getBoundingClientRect().top;
     let windowheight = window.innerHeight;
     if(windowheight>textPosition){
-        gup.classList.remove("goup");
+        gup.classList.remove("godown");
+    }
+    else {
+        gup.classList.add("godown");
     }
 }
 //************************************************************ */
