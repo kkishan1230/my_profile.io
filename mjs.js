@@ -1,12 +1,12 @@
 var x = window.innerWidth;
 if(x>699){
-    window.location.href="index.html";
+    window.location.href="index1.html";
 }
 
 
 addEventListener('resize', function(){
     if(window.innerWidth>699){
-        window.location.href="index.html";
+        window.location.href="index1.html";
     }
 })
 
