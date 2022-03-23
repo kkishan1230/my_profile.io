@@ -1,6 +1,6 @@
 var x = window.innerWidth;
 if(x>699){
-    window.location.href="something.html";
+    window.location.href="index.html";
 }
 
 
