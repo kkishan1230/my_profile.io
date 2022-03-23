@@ -3,7 +3,7 @@ if(x<699){
     window.location.href="mobile.html";
 }
 addEventListener('resize', function(){
-    if(window.innerWidth<699){
+    if(window.innerWidth<400){
         window.location.href="mobile.html";
     }
 })
