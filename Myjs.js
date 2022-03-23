@@ -1,3 +1,14 @@
+var x = window.innerWidth;
+if(x<699){
+    window.location.href="mobile.html";
+}
+addEventListener('resize', function(){
+    if(window.innerWidth<699){
+        window.location.href="mobile.html";
+    }
+})
+
+
 var ppi = document.querySelector(".c5");
 window.onload = (event) => {
     ppi.classList.remove("moveright");
@@ -8,19 +19,18 @@ window.onload = (event) => {
 
 //************************************************** */
 let item2 = document.querySelector(".item2");
+let item4 = document.querySelector(".item4");
 window.addEventListener("scroll" , appear);
 
 function appear(){
     let textPosition = item2.getBoundingClientRect().top;
     let windowheight = window.innerHeight;
     if(windowheight>textPosition){
-        let x = document.querySelector(".item2");
-        let y = document.querySelector(".item4")
-        x.classList.remove("pleft");
-        y.classList.remove("pright");
+        item2.classList.remove("pleft");
+        item4.classList.remove("pright");
     }else { 
-        x.classList.add("pleft");
-        y.classList.add("pright");
+        item2.classList.add("pleft");
+        item4.classList.add("pright");
  }
 }
 //****************************************************** */
@@ -46,9 +56,9 @@ function appear1(){
     let textPosition = cd1.getBoundingClientRect().top;
     let windowheight = window.innerHeight;
     if(windowheight>textPosition){
-        let x = document.querySelector(".cd1");
-        x.classList.remove("ml1");
-    }
+        
+        cd1.classList.remove("ml1");
+    }else cd1.classList.add("ml1");
 }
 //**************************************************************** */
 
@@ -59,9 +69,9 @@ function appear2(){
     let textPosition = cd2.getBoundingClientRect().top;
     let windowheight = window.innerHeight;
     if(windowheight>textPosition){
-        let x = document.querySelector(".cd2");
-        x.classList.remove("mr");
-    }
+        
+        cd2.classList.remove("mr");
+    }else cd2.classList.add("mr");
 }
 
 //**************************************************************** */
@@ -73,7 +83,6 @@ function appear3(){
     let textPosition = cd3.getBoundingClientRect().top;
     let windowheight = window.innerHeight;
     if(windowheight>textPosition){
-        let x = document.querySelector(".cd3");
-        x.classList.remove("ml2");
-    }
+        cd3.classList.remove("ml2");
+    }else cd3.classList.add("ml2");
 }
