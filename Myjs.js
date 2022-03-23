@@ -1,10 +1,10 @@
 var x = window.innerWidth;
 if(x<400){
-    window.location.href="/mobile.html";
+    window.location.href="./mobile.html";
 }
 addEventListener('resize', function(){
     if(window.innerWidth<400){
-        window.location.href="/mobile.html";
+        window.location.href="./mobile.html";
     }
 })
 
