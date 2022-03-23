@@ -1,5 +1,5 @@
 var x = window.innerWidth;
-if(x<699){
+if(x<400){
     window.location.href="mobile.html";
 }
 addEventListener('resize', function(){
