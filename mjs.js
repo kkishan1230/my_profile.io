@@ -6,7 +6,7 @@ if(x>699){
 
 addEventListener('resize', function(){
     if(window.innerWidth>699){
-        window.location.href="something.html";
+        window.location.href="index.html";
     }
 })
 
